@@ -14,7 +14,7 @@ export default function App() {
   async function reviewCode() {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5001/ai/get-review", {
+      const response = await axios.post("http://ai-code-reviewer-inky.vercel.app/ai/get-review", {
         code,
       });
       setReview(response.data);
